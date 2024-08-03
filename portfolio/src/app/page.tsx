@@ -34,7 +34,7 @@ export default function Home() {
               Coding the future<br />One line at a time
             </h1>
             <h2 className="text-slate-200 text-2xl font-bold text-left mt-5">
-              Crafting elegant solutions with ... and more
+              Crafting elegant solutions.
             </h2>
             {/* Resume */}
             <button type="button" onClick={() => {
