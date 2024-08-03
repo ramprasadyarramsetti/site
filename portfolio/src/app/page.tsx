@@ -74,7 +74,7 @@ export default function Home() {
       {/* About Me */}
       <section id='about' className="flex flex-col justify-center items-center mt-14 p-3">
         {/* commit stats */}
-        <div className="flex justify-center space-x-40 max-w-[500px] p-5 text-5xl font-mono">
+        <div className="flex justify-center lg:space-x-40 md:space-x-32 sm:space-x-14 max-w-[500px] p-5 lg:text-5xl md:text-4xl sm:text-xl font-mono">
           <div className="flex flex-col items-center">
             <AnimatedCounter from={0} to={4} />
             <span className="text-white text-lg mt-2">Projects</span>
