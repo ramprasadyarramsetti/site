@@ -4,6 +4,8 @@ import Image from "next/image";
 import ExperienceSection from "@/app/components/experience";
 import AnimatedCounter from "./components/animatedNum";
 import Projects from "./components/project";
+import ContactButton from "./components/contact";
+import TechStack from "./components/techstack";
 
 export default function Home() {
   return (
@@ -12,15 +14,15 @@ export default function Home() {
       <section className="flex flex-col justify-center items-center gap-3 mt-4 mb-5">
         <nav className="w-full max-w-64 p-4 border border-solid border-white rounded-3xl">
           <ul className="flex justify-center space-x-5">
-            <li className="text-white hover:text-blue-500 duration-700 ease-in-out"><Link href="#">Home</Link></li>
-            <li className="text-white hover:text-blue-500 duration-700 ease-in-out"><Link href="#">Projects</Link></li>
-            <li className="text-white hover:text-blue-500 duration-700 ease-in-out"><Link href="#">About me</Link></li>
+            <li className="text-white hover:text-blue-500 duration-700 ease-in-out"><Link href="#home">Home</Link></li>
+            <li className="text-white hover:text-blue-500 duration-700 ease-in-out"><Link href="#project">Projects</Link></li>
+            <li className="text-white hover:text-blue-500 duration-700 ease-in-out"><Link href="#about">About me</Link></li>
           </ul>
         </nav>
       </section>
 
       {/* Hero section */}
-      <section className="w-full flex flex-col items-center mt-16">
+      <section id= 'home' className="w-full flex flex-col items-center mt-16">
         <div className="flex w-full max-w-5xl items-start p-3">
           {/* Available for work */}
           <div className="w-1/2 flex flex-col items-start">
@@ -44,6 +46,17 @@ export default function Home() {
             }} className="bg-transparent text-white font-semibold border-solid border-2 border-indigo-500 p-3 rounded-md hover:bg-gradient-to-r hover:from-[#fc00ff] hover:to-[#00dbde] mt-10">
               Hire me
             </button>
+            <div className="flex flex-row justify-start mt-5 space-x-8">
+              <a href="https://www.linkedin.com/in/ibrahimchikani" target="_blank" rel="noopener noreferrer">
+                <img src="/linkedin.svg" alt="LinkedIn" width="60" height="60" />
+              </a>
+              <a href="https://github.com/IbrahimDev00" target="_blank" rel="noopener noreferrer">
+                <img src="/github.svg" alt="GitHub" width="60" height="60" />
+              </a>
+              <a href="mailto:chikani.ibrahim6@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="/email.svg" alt="Mail" width="60" height="60" />
+              </a>
+            </div>
           </div>
           {/* Image */}
           <div className="w-1/2 flex justify-end pr-10">
@@ -59,7 +72,7 @@ export default function Home() {
       </section>
 
       {/* About Me */}
-      <section className="flex flex-col justify-center items-center mt-14 p-3">
+      <section id='about' className="flex flex-col justify-center items-center mt-14 p-3">
         {/* commit stats */}
         <div className="flex justify-center space-x-40 max-w-[500px] p-5 text-5xl font-mono">
           <div className="flex flex-col items-center">
@@ -80,21 +93,20 @@ export default function Home() {
       </section>
 
       {/*projects*/}
-      <section className="flex flex-col items-center w-full mt-14 p-3">
+      <section id='project' className="flex flex-col items-center w-full mt-14 p-3">
         <div className="w-full max-w-7xl">
           <Projects />
         </div>
       </section>
-
-
+      
+      {/*techstack */}
+      <section className="flex flex-col items-center justify-center mt-10 p-3">
+        <TechStack/>
+      </section>
+      
       {/* Connect */}
-      <section className="flex flex-col items-center mt-10 p-3">
-        <h3 className="text-slate-200 text-2xl font-semibold">
-          <span className="underline decoration-cyan-500 decoration-4">Let's</span> connect over coffee ☕
-        </h3>
-        <p className="text-slate-200 text-lg font-medium mt-3">
-          Schedule a time that works for you and let's discuss opportunities, ideas, and more.
-        </p>
+      <section className="flex flex-col items-center justify-center mt-10 p-3 mb-5">
+        <ContactButton/>
       </section>
     </main>
   );
