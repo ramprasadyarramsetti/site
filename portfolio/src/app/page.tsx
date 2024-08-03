@@ -77,15 +77,15 @@ export default function Home() {
         <div className="flex justify-center lg:space-x-40 md:space-x-32 sm:space-x-14 max-w-[500px] p-5 lg:text-5xl md:text-4xl sm:text-xl font-mono">
           <div className="flex flex-col items-center">
             <AnimatedCounter from={0} to={4} />
-            <span className="text-white text-lg mt-2">Projects</span>
+            <span className="text-white lg:text-lg md:text-base sm:text-xs mt-2">Projects</span>
           </div>
           <div className="flex flex-col items-center">
             <AnimatedCounter from={0} to={140} />
-            <span className="text-white text-lg mt-2">Commits</span>
+            <span className="text-white mt-2 lg:text-lg md:text-base sm:text-xs">Commits</span>
           </div>
           <div className="flex flex-col items-center">
             <AnimatedCounter from={0} to={5} />
-            <span className="text-white text-lg mt-2">Clients</span>
+            <span className="text-white mt-2 lg:text-lg md:text-base sm:text-xs">Clients</span>
           </div>
         </div>
         {/* work experience */}
