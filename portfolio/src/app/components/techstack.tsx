@@ -40,9 +40,9 @@ const TechStack = () => {
         <div className="flex flex-col items-center w-[300px]">
           <h3 className="font-semibold text-xl p-4 text-slate-300 mb-2">Database</h3>
           <div className="grid grid-cols-3 gap-x-6">
-            <Image src="/Mongo.svg" width={40} height={40} alt="MongoDB" />
-            <Image src="/Redis.svg" width={40} height={40} alt="Redis" />
-            <Image src="/Mysql.svg" width={40} height={40} alt="MySQL" />
+            <Image src="/mongo.svg" width={40} height={40} alt="MongoDB" />
+            <Image src="/redis.svg" width={40} height={40} alt="Redis" />
+            <Image src="/mysql.svg" width={40} height={40} alt="MySQL" />
           </div>
         </div>
       </div>
