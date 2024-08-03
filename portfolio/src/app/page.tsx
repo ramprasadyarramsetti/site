@@ -1,12 +1,13 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
-import ExperienceSection from "@/app/components/experience"
+import ExperienceSection from "@/app/components/experience";
+import AnimatedCounter from "./components/animatedNum";
+import Projects from "./components/project";
 
 export default function Home() {
   return (
     <main className="bg-gray-900 min-w-full min-h-screen flex flex-col">
-
       {/* Navbar */}
       <section className="flex flex-col justify-center items-center gap-3 mt-4 mb-5">
         <nav className="w-full max-w-64 p-4 border border-solid border-white rounded-3xl">
@@ -60,14 +61,31 @@ export default function Home() {
       {/* About Me */}
       <section className="flex flex-col justify-center items-center mt-14 p-3">
         {/* commit stats */}
-        <div className="flex justify-center space-x-56 max-w-[500px] p-5">
-          <h1 className="text-white text-xl text-center mt-2 gap-y-2"><span className="block text-5xl">5+</span> projects</h1>
-          <h1 className="text-white text-xl text-center mt-2 gap-y-2"><span className="block text-5xl">130+</span> commits</h1>
-          <h1 className="text-white text-xl text-center mt-2 gap-y-2"><span className="block text-5xl">5+</span> clients</h1>
+        <div className="flex justify-center space-x-40 max-w-[500px] p-5 text-5xl font-mono">
+          <div className="flex flex-col items-center">
+            <AnimatedCounter from={0} to={4} />
+            <span className="text-white text-lg mt-2">Projects</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <AnimatedCounter from={0} to={140} />
+            <span className="text-white text-lg mt-2">Commits</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <AnimatedCounter from={0} to={5} />
+            <span className="text-white text-lg mt-2">Clients</span>
+          </div>
         </div>
         {/* work experience */}
-        <ExperienceSection/>
+        <ExperienceSection />
       </section>
+
+      {/*projects*/}
+      <section className="flex flex-col items-center w-full mt-14 p-3">
+        <div className="w-full max-w-7xl">
+          <Projects />
+        </div>
+      </section>
+
 
       {/* Connect */}
       <section className="flex flex-col items-center mt-10 p-3">
