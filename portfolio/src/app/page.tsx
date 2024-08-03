@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import Image from "next/image";
+import ExperienceSection from "@/app/components/experience"
 
 export default function Home() {
   return (
@@ -65,25 +66,15 @@ export default function Home() {
           <h1 className="text-white text-xl text-center mt-2 gap-y-2"><span className="block text-5xl">5+</span> clients</h1>
         </div>
         {/* work experience */}
-        <div className="flex flex-col items-center justify-center mt-5 w-full mb-10">
-          <div className="flex flex-col items-start w-full max-w-5xl p-2 mt-16">
-            <h4 className="text-white font-medium text-lg inline-block border-b border-solid border-white mb-2">Purple Media</h4>
-          </div>
-          <div className="flex flex-col items-start w-full max-w-5xl p-2">
-            <h4 className="text-white font-medium text-lg inline-block border-b border-solid border-white mb-2">Gitam Aero Astro Club</h4>
-          </div>
-          <div className="flex flex-col items-start w-full max-w-5xl p-2">
-            <h4 className="text-white font-medium text-lg inline-block border-b border-solid border-white mb-2">StellaX</h4>
-          </div>
-        </div>
+        <ExperienceSection/>
       </section>
 
       {/* Connect */}
-      <section className="flex flex-col justify-center items-center mt-10 p-3">
-        <h3 className="text-slate-200 text-2xl font-semibold text-center">
+      <section className="flex flex-col items-center mt-10 p-3">
+        <h3 className="text-slate-200 text-2xl font-semibold">
           <span className="underline decoration-cyan-500 decoration-4">Let's</span> connect over coffee ☕
         </h3>
-        <p className="text-slate-200 text-lg font-medium text-center mt-3">
+        <p className="text-slate-200 text-lg font-medium mt-3">
           Schedule a time that works for you and let's discuss opportunities, ideas, and more.
         </p>
       </section>
