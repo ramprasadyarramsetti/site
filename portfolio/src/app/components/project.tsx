@@ -38,14 +38,14 @@ function Projects() {
           </figure>
           <div className="p-6 text-gray-900 dark:text-white flex flex-col flex-grow">
             <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
+            <p className="text-gray-700 dark:text-white mb-4">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2 my-2 overflow-x-auto">
               {project.tech.map((tech, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm"
+                  className="px-3 py-1 bg-white dark:bg-gray-700 text-gray-800 dark:text-white rounded-full text-sm"
                 >
                   {tech}
                 </span>

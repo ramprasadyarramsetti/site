@@ -4,14 +4,14 @@ import Image from 'next/image';
 const TechStack = () => {
   return (
     <div className="p-5">
-      <h1 className="text-slate-200 font-bold text-3xl mb-4">
+      <h1 className="text-white font-bold text-3xl mb-4">
         Tech Stack
       </h1>
       <div className="bg-gradient-to-r from-purple-500 to-indigo-500 h-1 w-16 mb-4"></div>
       <div className="flex flex-wrap gap-8 justify-center">
         {/* Languages Section */}
         <div className="flex flex-col items-center w-[300px]">
-          <h3 className="font-semibold text-xl p-4 text-slate-300 mb-2">Languages</h3>
+          <h3 className="font-semibold text-xl p-4 text-white mb-2">Languages</h3>
           <div className="grid grid-cols-4 gap-y-4 gap-x-4">
             <Image src="/C.svg" width={40} height={40} alt="C language" />
             <Image src="/python.svg" width={40} height={40} alt="Python language" />
@@ -26,7 +26,7 @@ const TechStack = () => {
 
         {/* Frameworks Section */}
         <div className="flex flex-col items-center w-[300px]">
-          <h3 className="font-semibold text-xl p-4 text-slate-300 mb-2">Frameworks</h3>
+          <h3 className="font-semibold text-xl p-4 text-white mb-2">Frameworks</h3>
           <div className="grid grid-cols-3 gap-x-5 gap-y-4">
             <Image src="/react.svg" width={50} height={50} alt="React" />
             <Image src="/next.svg" width={50} height={50} alt="Next.js" />
@@ -38,7 +38,7 @@ const TechStack = () => {
 
         {/* Database Section */}
         <div className="flex flex-col items-center w-[300px]">
-          <h3 className="font-semibold text-xl p-4 text-slate-300 mb-2">Database</h3>
+          <h3 className="font-semibold text-xl p-4 text-white mb-2">Database</h3>
           <div className="grid grid-cols-3 gap-x-6">
             <Image src="/mongo.svg" width={40} height={40} alt="MongoDB" />
             <Image src="/redis.svg" width={40} height={40} alt="Redis" />

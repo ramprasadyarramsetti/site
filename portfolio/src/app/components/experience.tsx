@@ -8,7 +8,7 @@ const ExperienceSection = () => {
 
   return (
     <section className="mt-32 mx-auto min-h-[28rem]">
-      <span className="text-slate-200 text-3xl text-left font-bold">Work Experience🥼</span>
+      <span className="text-white0 text-3xl text-left font-bold">Work Experience🥼</span>
       <div className="bg-gradient-to-r from-purple-500 to-indigo-500 h-1 w-16 mb-4"></div>
       <div className="flex flex-col md:flex-row rounded-lg overflow-hidden shadow-lg gap-12 mt-12">
         <div className="flex-shrink-0 w-full md:w-1/3">
@@ -19,8 +19,8 @@ const ExperienceSection = () => {
               whileTap={{ scale: 0.95 }}
               className={`p-4 cursor-pointer transition-transform duration-300 ${
                 selectedCompany === exp
-                  ? "bg-gray-200 text-black dark:bg-gray-800 dark:text-gray-300"
-                  : "hover:bg-gray-200 dark:hover:bg-gray-800 text-black dark:text-gray-300"
+                  ? "bg-white text-black dark:bg-gray-800 dark:text-white"
+                  : "hover:bg-white dark:hover:bg-gray-800 text-black dark:text-white"
               } border-b border-gray-300 dark:border-gray-600 mb-4 md:mb-0`}
               onClick={() => setSelectedCompany(exp)}
             >
@@ -38,10 +38,10 @@ const ExperienceSection = () => {
             <IconBriefcase className="h-10 w-10 text-blue-500" />
             <div>
               <h3 className="text-2xl font-semibold">{selectedCompany.role}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-600 dark:text-white">
                 <strong>Period:</strong> {selectedCompany.period}
               </p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-600 dark:text-white">
                 <strong>Location:</strong> {selectedCompany.location}
               </p>
             </div>

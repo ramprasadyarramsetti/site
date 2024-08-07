@@ -30,10 +30,10 @@ export default function Home() {
               <p className="text-green-500 text-base font-semibold text-left"><span className="animate-pulse duration-75">🟢</span> Available for work</p>
             </div>
             {/* Text */}
-            <h1 className="text-slate-200 text-5xl font-bold text-left mb-3 mt-2">
+            <h1 className="text-white text-5xl font-bold text-left mb-3 mt-2">
               Coding the future<br />One line at a time
             </h1>
-            <h2 className="text-slate-200 text-2xl font-bold text-left mt-5">
+            <h2 className="text-white text-2xl font-bold text-left mt-5">
               Crafting elegant solutions.
             </h2>
             {/* Resume */}
